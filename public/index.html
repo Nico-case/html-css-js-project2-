@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="design.css">
+    <title>Html-Css-js</title>
+
+</head>
+
+<body>
+    <!--Changing themes-->
+    <div class="color-switcher">
+
+        <h3>Color</h3>
+        <div class="theme-buttons-container">
+            <span class="theme-buttons"
+                data-color="linear-gradient(to right top, #812894, #7d4ba8, #7b66b7, #7f7fc1, #8995c8, #859fcc, #84a8ce, #87b1cf, #6fb1cc, #55b1c5, #3eb1b8, #30afa7)"
+                style="background: linear-gradient(to right top, #812894, #7d4ba8, #7b66b7, #7f7fc1, #8995c8, #859fcc, #84a8ce, #87b1cf, #6fb1cc, #55b1c5, #3eb1b8, #30afa7);"></span>
+            <span class="theme-buttons"
+                data-color="linear-gradient(to left bottom, #3b784e, #459383, #6aabb0, #9cc2d1, #cddae8, #d7daeb, #e3d9ea, #eed9e5, #e9bcc0, #daa490, #b79461, #808941)"
+                style="background:linear-gradient(to left bottom, #3b784e, #459383, #6aabb0, #9cc2d1, #cddae8, #d7daeb, #e3d9ea, #eed9e5, #e9bcc0, #daa490, #b79461, #808941);"></span>
+            <span class="theme-buttons"
+                data-color="linear-gradient(to left bottom, #b1282e, #90212e, #6f1c2a, #4e1723, #2f1219, #37171b, #3f1c1d, #47211e, #733b1d, #90610a, #988f00, #82c20a)"
+                style="background:linear-gradient(to left bottom, #b1282e, #90212e, #6f1c2a, #4e1723, #2f1219, #37171b, #3f1c1d, #47211e, #733b1d, #90610a, #988f00, #82c20a);"></span>
+            <span class="theme-buttons"
+                data-color="radial-gradient(circle, #529d69, #409771, #2f9077, #22897c, #1c827f, #1b857f, #1b877e, #1d8a7d, #369674, #56a165, #7ba955, #a2af46)"
+                style="background:radial-gradient(circle, #529d69, #409771, #2f9077, #22897c, #1c827f, #1b857f, #1b877e, #1d8a7d, #369674, #56a165, #7ba955, #a2af46);"></span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-icons-outlined">expand_more</i>
+            <span>Music Player</span>
+            <i class="material-icons-outlined">more_horiz</i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="song-timer">
+                <span class="current-time">0:00</span>
+                <span class="max-duration">0:00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons-outlined" title="Playlist looped">repeat</i>
+            <i id="prev" class="material-icons-outlined">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons-outlined play">play_arrow</i>
+            </div>
+            <i id="next" class="material-icons-outlined">skip_next</i>
+            <i id="more-music" class="material-icons-outlined">queue_music</i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="list material-icons-outlined">queue_music</i>
+                    <span>Lista de reproduccion</span>
+                </div>
+                <i id="close" class="material-icons-outlined">close</i>
+            </div>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        En agradecimiento a <a href="https://www.youtube.com/channel/UCk7xIEmd3MeyhIu2StLX5yA"
+            target="_blank">CodingNepal</a> por el proyecto
+    </footer>
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/themes.js"></script>
+</body>
+
+</html>
